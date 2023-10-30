@@ -1,30 +1,24 @@
-import React,{useState}from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './signup.css';
 
+
  const  Signup=()=>{
-	const [username,setUserName]=useState("");
-	const [phonenumber,setPhoneNumber]=useState("");
-	const [experience,setExperience]=useState("");
-	const [specilaization,setSpecilaization]=useState("");
-	const [qualification,setQualification]=useState("");
-	const [email_Id,setEmail_Id]=useState("");
-	const [password,setPassword]=useState("");
-	const [address,setAddress]=useState("");
+	const [patientname,setpatientname]=useState("");
+	const [patientmobile,setpatientmobile]=useState("");
+	const [patientemailid,setpatientemailid]=useState("");
+	const [patientpassword,setpatientpassword]=useState("");
+
 
 	
 
 	const handleClick = async() => {
-		await axios.post('http://localhost:8080/api/v1/doctors', {
+		await axios.post('http://localhost:8080/api/v1/details', {
 				"id": 0,
-				"userName":username,
-				"phoneNumber":phonenumber,
-				"emailId":experience,
-				"password": specilaization,
-				"address": qualification,
-				"experience": email_Id,
-				"qualification":password,
-				"specialization":address
+				"patientname":patientname,
+				"patientMobile":patientmobile,
+				"emailId":patientemailid,
+				"password":patientpassword,
 		}).then(function (response) {
 				console.log(response);
 		}).catch(function (error) {
@@ -44,37 +38,23 @@ import './signup.css';
 						<h1>Signup Page</h1>
 							<form>
 								<div className="input">
-									<input type="text" placeholder="username" onChange={(e) => setUserName(e.target.value)} className="details"/>
+									<input type="text" placeholder="PatientName" onChange={(e) => setpatientname(e.target.value)} className="details"/>
 								</div>
 								
 								<div className="input">
-									<input type="number" placeholder="Phonenumber" onChange={(e)=> setPhoneNumber(e.target.value)} className="details"/>
+									<input type="number" placeholder="patientMobile" onChange={(e)=> setpatientmobile(e.target.value)} className="details"/>
 								</div>
 								<div className="input">
-									<input type="text" placeholder="Experience" onChange={(e)=> setExperience(e.target.value)} className="details"/>
-								</div>
-								
-								<div className="input">
-									<input type="text" placeholder="Specilaization" onChange={(e)=> setSpecilaization(e.target.value)} className="details"/>
+									<input type="text" placeholder="Email-Id" onChange={(e)=> setpatientemailid(e.target.value)} className="details"/>
 								</div>
 								<div className="input">
-									<input type="text" placeholder="Qualification" onChange={(e)=> setQualification(e.target.value)} className="details"/>
-								</div>
-								
-								<div className="input">
-									<input type="text" placeholder="Email-Id" onChange={(e)=> setEmail_Id(e.target.value)} className="details"/>
-								</div>
-								<div className="input">
-									<input type="text" placeholder="Password" onChange={(e)=> setPassword(e.target.value)} className="details"/>
-								</div>
-								
-								<div className="input">
-									<input type="text" placeholder="Address" onChange={(e)=> setAddress(e.target.value)} className="details"/>
+									<input type="text" placeholder="Password" onChange={(e)=> setpatientpassword(e.target.value)} className="details"/>
 								</div>
 								<div className="input center">
 									<button className="login" onClick={handleClick}>signup</button>
+									<p className="login-text">Alreadyamember? <a href="" className="white"> Login</a></p>
 								</div>
-								<p className="login-text">Already a member? <a href="" className="white"> Login</a></p>
+								
 							</form>
 						</div>
                 </div>  

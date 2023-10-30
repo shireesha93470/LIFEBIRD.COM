@@ -15,21 +15,20 @@ import { useNavigate } from 'react-router';
         <div class="nav__logo">LIFE<span>BIRD</span></div>
         <ul class="nav__links">
           <li class="link"><a href="#">Home</a></li>
-          <li class="link"><a href="#">About Us</a></li>
-          <li class="link"><a href="#">Services</a></li>
-          <li class="link"><a href="#">Pages</a></li>
+          <li class="link"><a href="#">Doctors</a></li>
+          <li class="link"><a href="#">Appointments</a></li>
+          <li class="link"><a href="#">About us</a></li>
           <li class="link"><a href="#">Blog</a></li>
         </ul>
         <button class="btn" onClick={handleNavigation} >Signup</button>
       </nav>
       <div class="section__container header__container">
         <div class="header__content">
-          <h1>Providing an Exceptional Patient Experience</h1>
+          <h1>Delivering Outstanding Care Experiences for Patients</h1>
           <p>
-            Welcome, where exceptional patient experiences are our priority.
-            With compassionate care, state-of-the-art facilities, and a
-            patient-centered approach, we're dedicated to your well-being. Trust
-            us with your health and experience the difference.
+            Welcome, where your extraordinary patient journey is our top concern.
+             We're committed to your health with compassion, advanced facilities, and a patient-centric ethos. 
+             Put your trust in us for your well-being, and feel the distinction.
           </p>
           <button class="btn">See Services</button>
         </div>
@@ -91,7 +90,7 @@ import { useNavigate } from 'react-router';
       <div class="about__content">
         <h2 class="section__header">About Us</h2>
         <p>
-          Welcome to our healthcare website, your one-stop destination for
+          Welcome to our LifeBird website, your one-stop destination for
           reliable and comprehensive health care information. We are committed
           to promoting wellness and providing valuable resources to empower you
           on your health journey.
@@ -111,13 +110,13 @@ import { useNavigate } from 'react-router';
         </p>
       </div>
       <div class="about__image">
-        <img src="https://github.com/WebDesignMastery/HealthCare_22-07-23/blob/main/assets/about.jpg?raw=true" alt="about" />
+        <img src="./Resources/about.jpg" alt="about" />
       </div>
     </section>
 
     <section class="section__container why__container">
       <div class="why__image">
-        <img src="https://github.com/WebDesignMastery/HealthCare_22-07-23/blob/main/assets/choose-us.jpg?raw=true" alt="why choose us" />
+        <img src="./Resources/choose-us.jpg" alt="why choose us" />
       </div>
       <div class="why__content">
         <h2 class="section__header">Why Choose Us</h2>
@@ -172,7 +171,7 @@ import { useNavigate } from 'react-router';
       <div class="doctors__grid">
         <div class="doctors__card">
           <div class="doctors__card__image">
-            <img src="https://github.com/WebDesignMastery/HealthCare_22-07-23/blob/main/assets/doctor-1.jpg?raw=true" alt="doctor" />
+            <img src="https://cdn.yashodahospitals.com/wp-content/uploads/Dr.-Vennela-Devarapalli.jpg" alt="doctor" />
             <div class="doctors__socials">
               <span><i class="ri-instagram-line"></i></span>
               <span><i class="ri-facebook-fill"></i></span>
@@ -180,12 +179,12 @@ import { useNavigate } from 'react-router';
               <span><i class="ri-twitter-fill"></i></span>
             </div>
           </div>
-          <h4>Dr. Emily Smith</h4>
+          <h4>Dr.Ramya</h4>
           <p>Cardiologist</p>
         </div>
         <div class="doctors__card">
           <div class="doctors__card__image">
-            <img src="https://github.com/WebDesignMastery/HealthCare_22-07-23/blob/main/assets/doctor-2.jpg?raw=true" alt="doctor" />
+            <img src="https://max-website20-images.s3.ap-south-1.amazonaws.com/Dr_Anupam_Bhargava_af980e8ec8.jpg" alt="doctor" />
             <div class="doctors__socials">
               <span><i class="ri-instagram-line"></i></span>
               <span><i class="ri-facebook-fill"></i></span>
@@ -193,12 +192,12 @@ import { useNavigate } from 'react-router';
               <span><i class="ri-twitter-fill"></i></span>
             </div>
           </div>
-          <h4>Dr. James Anderson</h4>
+          <h4>Dr. Anand</h4>
           <p>Neurosurgeon</p>
         </div>
         <div class="doctors__card">
           <div class="doctors__card__image">
-            <img src="https://github.com/WebDesignMastery/HealthCare_22-07-23/blob/main/assets/doctor-3.jpg?raw=true" alt="doctor" />
+            <img src="https://txhospitals.in/wp-content/uploads/2023/10/Dr.-Dharma-Rakshak-Ayapati.webp" alt="doctor" />
             <div class="doctors__socials">
               <span><i class="ri-instagram-line"></i></span>
               <span><i class="ri-facebook-fill"></i></span>
@@ -206,7 +205,7 @@ import { useNavigate } from 'react-router';
               <span><i class="ri-twitter-fill"></i></span>
             </div>
           </div>
-          <h4>Dr. Michael Lee</h4>
+          <h4>Dr.Satheesh Babu</h4>
           <p>Dermatologist</p>
         </div>
       </div>

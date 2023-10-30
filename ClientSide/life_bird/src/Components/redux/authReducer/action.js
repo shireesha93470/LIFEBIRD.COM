@@ -25,7 +25,7 @@ export const signup = (userData) => {
     dispatch(signupRequest());
 
     
-    axios.post('http://localhost:8080/doctors', userData)
+    axios.post('http://localhost:8080/details', userData)
       .then((response) => {
         dispatch(signupSuccess(response.data));
       })

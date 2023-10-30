@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
+@import url("https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css");
 :root {
   --primary-color: #12ac8e;
   --primary-color-dark: #0d846c;
@@ -61,7 +61,7 @@ header {
       rgba(18, 172, 142, 0.9),
       rgba(18, 172, 142, 0.7)
     ),
-    url("https://github.com/WebDesignMastery/HealthCare_22-07-23/blob/main/assets/header.jpg?raw=true");
+    url("https://www.felixhospital.com/sites/default/files/2022-09/Tips%20For%20First%20Time%20Parents.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
