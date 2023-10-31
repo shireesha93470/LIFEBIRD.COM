@@ -9,8 +9,8 @@ import './login.css';
       
     return(<div>
         <div>
-            <div className='back-ground'>
-              <div className='mainCard'>
+            <div className='back-ground1'>
+              <div className='mainCard1'>
 					<div className='subCard1'>
 						<img src="https://i.pinimg.com/originals/fd/93/8f/fd938f85645c5fad55df48a7e30b1161.png"></img>
 					</div>

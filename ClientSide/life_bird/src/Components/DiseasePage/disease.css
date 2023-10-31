@@ -1,0 +1,240 @@
+.Name{
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: open;
+    margin-left: 600px;
+}
+#parttwo{
+    width:90%;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.phone{
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.exp{
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.address{
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+image{
+    height:400px;
+    width:400px;
+    border:1px solid black;
+   
+}
+.card{
+    height:500px;
+    width:1290px;
+    margin-left: 300px;
+    background-color: white;
+    margin-top: 30px;
+    display: flex;
+}
+.card img{
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    width:530px;    
+
+}
+.cardio{
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.siri{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 60px;
+}
+.Main{
+    height:700px;
+    width:100%;
+    background-color: rgb(201, 195, 195);
+    margin-top: 60px;
+    background-color: #00323b;
+}
+.line{
+    height:60px;
+    width:63.5%;
+    display: flex;
+    background-color: #1069a0;
+    margin-left: 300px;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.prime{
+    height:500px;
+    width:400px;
+   
+    
+}
+.cart{
+    height:60px;
+    width:260px;
+    background-color:#1069a0;
+    border-radius: 10px;
+   
+
+}
+.cart p{
+    margin-left: 10px;
+}
+.line p{
+    margin-left: 40px;
+    font-size: 25px;
+    color:white;
+}
+.cart:hover{
+    background-color: white;
+}
+
+.cart:hover p {
+    color: black;
+} 
+.img{
+    height:300px;
+    width:300px;
+    border:1px solid black;
+    border-radius: 10px;
+    
+} 
+.nav{
+    height:100px;
+    width:1600px;
+    border:1pc solid rgb(194, 188, 188);
+    margin-left: 10px;
+}
+.navbar{
+    display: flex;
+    border: 1px solid white; 
+    background-image: linear-gradient(to left, #08162a, #00243a, #00323b, #003e2c, #134811);
+    height: 100px;
+    width: 100%;
+    color:white;
+}
+ 
+.home{
+    margin-left: 990px;
+    margin-top: 29px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 34px;
+    color:white;
+ }
+.Doctor{
+    margin-left: 50px;
+    margin-top: 29px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 34px;
+    color: black;
+    color:white;
+ }
+ 
+.lab{
+    margin-left: 50px;
+    margin-top: 29px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 34px;
+    color: black;
+    color:white;
+ }
+ 
+.medicine{
+    margin-left: 50px;
+    margin-top: 29px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 34px;
+    color: black;
+    color:white;
+ }
+ 
+.signup{
+    margin-left: 50px;
+    margin-top: 29px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 34px;
+    color: black;
+    color:white;
+ }
+.logo{
+    margin-left: 80px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 50px;
+    height:80px;
+    width:200px;
+    margin-top: 10px;
+}
+.display{
+    display: flex; 
+    background-color: rgb(132, 132, 132);
+    margin-top: 5px;
+
+}
+.partone img{
+    height:750px;
+    width:100%;
+    background-size: cover;
+    margin-left: 5px;
+    
+}
+.small{ 
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.doctor{
+    width: 400px;
+}
+
+.img{
+    margin-left: 70px;
+}
+.text1{
+    margin-left: -450px;
+}
+.clickbutton{
+    height:60px;
+    width:250px;
+    margin-left: 80px;
+    background-color: rgb(155, 232, 155);
+    border-radius: 10px;
+    font-size: 20px;
+}
+.search-input img{
+    height:40px;
+    width:40px;
+    
+}
+ .search-button{
+    height:55px;
+    width: 60px;
+    border:1px solid black; 
+    margin-left: 10px;
+    margin-top: -30px;
+    background-color: white;
+}
+ .search-input{
+    display: flex;
+}
+ .search-input input{
+    height:50px;
+    width:500px;
+    margin-top: -30px;
+    font-size: 20px;
+    margin-left: 650px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+

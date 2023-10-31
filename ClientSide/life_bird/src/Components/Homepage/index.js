@@ -9,6 +9,9 @@ import { useNavigate } from 'react-router';
   const handleNavigation = () => {
     navigate('/signup');
   };
+  const diseaseNavigation = () => {
+    navigate('/disease');
+  };
     return(<div>
       <header>
       <nav class="section__container nav__container">
@@ -17,10 +20,10 @@ import { useNavigate } from 'react-router';
           <li class="link"><a href="#">Home</a></li>
           <li class="link"><a href="#">Doctors</a></li>
           <li class="link"><a href="#">Appointments</a></li>
-          <li class="link"><a href="#">About us</a></li>
+          <li class="link"><a href="#" onClick={diseaseNavigation}>Disease</a></li>
           <li class="link"><a href="#">Blog</a></li>
         </ul>
-        <button class="btn" onClick={handleNavigation} >Signup</button>
+        <button class="btn2" onClick={handleNavigation} >Signup</button>
       </nav>
       <div class="section__container header__container">
         <div class="header__content">
@@ -30,7 +33,7 @@ import { useNavigate } from 'react-router';
              We're committed to your health with compassion, advanced facilities, and a patient-centric ethos. 
              Put your trust in us for your well-being, and feel the distinction.
           </p>
-          <button class="btn">See Services</button>
+          <button class="btn2">See Services</button>
         </div>
         <div class="header__form">
           <form>
@@ -39,7 +42,7 @@ import { useNavigate } from 'react-router';
             <input type="text" placeholder="Last Name" />
             <input type="text" placeholder="Address" />
             <input type="text" placeholder="Phone No." />
-            <button class="btn form__btn">Book Appointment</button>
+            <button class="btn2 form__btn">Book Appointment</button>
           </form>
         </div>
       </div>
