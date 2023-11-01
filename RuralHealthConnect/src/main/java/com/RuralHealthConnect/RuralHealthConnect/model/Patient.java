@@ -12,36 +12,24 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "doctor")
+@Table(name = "patient")
 
-public class Doctor {
+public class Patient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "user_name")
+    @Column(name = "patientname")
     private String userName;
 
-    @Column(name = "phone_number")
+    @Column(name = "patientmobile")
     private String phoneNumber;
 
-    @Column(name = "experience")
-    private String Experience;
-
-    @Column(name = "qualification")
-    private String Qualification;
-
-    @Column(name = "specialization")
-    private String Specialization;
-
-    @Column(name = "address")
-    private String Address;
-
-    @Column(name = "emailid")
+    @Column(name = "patientemailid")
     private String emailId;
 
-    @Column(name = "password")
+    @Column(name = "patientpassword")
     private String password;
 
 }
