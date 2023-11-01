@@ -12,16 +12,27 @@ import { useNavigate } from 'react-router';
   const diseaseNavigation = () => {
     navigate('/disease');
   };
+  const doctorsNavigation=()=> {
+    navigate('/doctors');
+  }
+  const appointmentNavigation=()=>
+  {
+    navigate('/appointments')
+  }
+  const aboutNavigation=()=>
+  {
+    navigate('/about')
+  }
     return(<div>
       <header>
       <nav class="section__container nav__container">
         <div class="nav__logo">LIFE<span>BIRD</span></div>
         <ul class="nav__links">
-          <li class="link"><a href="#">Home</a></li>
-          <li class="link"><a href="#">Doctors</a></li>
-          <li class="link"><a href="#">Appointments</a></li>
-          <li class="link"><a href="#" onClick={diseaseNavigation}>Disease</a></li>
-          <li class="link"><a href="#">Blog</a></li>
+          <li class="link"><a href="">Home</a></li>
+          <li class="link"><a href="" onClick={diseaseNavigation}>Diseases</a></li>
+          <li class="link"><a href="" onClick={doctorsNavigation}>Doctors</a></li>
+          <li class="link"><a href="" onClick={appointmentNavigation}>Appointments</a></li>
+          <li class="link"><a href="" onClick={aboutNavigation}>About us</a></li>
         </ul>
         <button class="btn2" onClick={handleNavigation} >Signup</button>
       </nav>

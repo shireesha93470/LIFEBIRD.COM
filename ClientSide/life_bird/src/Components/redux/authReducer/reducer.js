@@ -1,31 +1,59 @@
+import {
+  GET_ALL_SIGNUP_REQUEST,
+  GET_ALL_SIGNUP_SUCCESS,
+  GET_ALL_SIGNUP_FAILURE,
+  GET_ALL_DISEASE_REQUEST,
+  GET_ALL_DISEASE_SUCCESS,
+  GET_ALL_DISEASE_FAILURE,
+} from './actiontype';
 
-const initialState = {
-  user: null,
+export const initialState = {
+  data: [],
+  error: '',
   loading: false,
-
-  error: null,
+  searchData: [],
+  requestedDisease: [],
 };
 
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SIGNUP_REQUEST:
+    case GET_ALL_SIGNUP_REQUEST:
+      return {
+        ...state,
+        loading: true,
+        error: '',
+      };
+    case GET_ALL_SIGNUP_SUCCESS:
+      return {
+        ...state,
+        error: '',
+        data: action.payload, 
+        loading: false,
+      };
+    case GET_ALL_SIGNUP_FAILURE:
+      return {
+        ...state,
+        loading: false,
+        error: 'Something went wrong',
+      };
+    case GET_ALL_DISEASE_REQUEST:
       return {
         ...state,
         loading: true,
         error: null,
       };
-    case SIGNUP_SUCCESS:
+    case GET_ALL_DISEASE_SUCCESS:
       return {
         ...state,
-        user: action.payload,
+        data: action.payload,
         loading: false,
         error: null,
       };
-    case SIGNUP_FAILURE:
+    case GET_ALL_DISEASE_FAILURE:
       return {
         ...state,
         loading: false,
-        error: action.payload,
+        error: 'Something went wrong',
       };
     default:
       return state;
@@ -33,3 +61,4 @@ const authReducer = (state = initialState, action) => {
 };
 
 export default authReducer;
+

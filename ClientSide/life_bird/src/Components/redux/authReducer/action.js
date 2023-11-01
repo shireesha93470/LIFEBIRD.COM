@@ -1,36 +1,53 @@
-// actions/authActions.js
 import axios from 'axios';
 import {
-  SIGNUP_REQUEST,
-  SIGNUP_SUCCESS,
-  SIGNUP_FAILURE,
-} from './action';
+  GET_ALL_SIGNUP_REQUEST,
+  GET_ALL_SIGNUP_SUCCESS,
+  GET_ALL_SIGNUP_FAILURE,
+  GET_ALL_DISEASE_REQUEST,
+  GET_ALL_DISEASE_SUCCESS,
+  GET_ALL_DISEASE_FAILURE,
+} from './actiontype.js';
 
-const signupRequest = () => ({
-  type: SIGNUP_REQUEST,
+export const getAllsignupRequest = () => ({
+  type: GET_ALL_SIGNUP_REQUEST,
 });
 
-const signupSuccess = (data) => ({
-  type: SIGNUP_SUCCESS,
-  payload: data,
+const getAllsignupSuccess = (data) => ({
+  type: GET_ALL_SIGNUP_SUCCESS,
+  data, // Add 'data' as a payload
 });
 
-const signupFailure = (error) => ({
-  type: SIGNUP_FAILURE,
+const getAllsignupFailure = () => ({
+  type: GET_ALL_SIGNUP_FAILURE,
+});
+
+export const signup = () => (dispatch) => {
+  dispatch(getAllsignupRequest());
+  axios
+    .get('http://localhost:8080/details')
+    .then((res) => dispatch(getAllsignupSuccess(res.data)))
+    .catch(() => dispatch(getAllsignupFailure()));
+};
+
+const diseaseRequest = () => ({
+  type: GET_ALL_DISEASE_REQUEST,
+});
+
+const diseaseSuccess = (data) => ({
+  type: GET_ALL_DISEASE_SUCCESS,
+  payload: data, 
+});
+
+const diseaseFailure = (error) => ({
+  type: GET_ALL_DISEASE_FAILURE,
   payload: error,
 });
 
-export const signup = (userData) => {
-  return (dispatch) => {
-    dispatch(signupRequest());
-
-    
-    axios.post('http://localhost:8080/details', userData)
-      .then((response) => {
-        dispatch(signupSuccess(response.data));
-      })
-      .catch((error) => {
-        dispatch(signupFailure(error.message));
-      });
-  };
+export const disease = () => (dispatch) => {
+  dispatch(diseaseRequest());
+  axios
+    .get('http://localhost:8080/logos')
+    .then((res) => dispatch(diseaseSuccess(res.data)))
+    .catch((error) => dispatch(diseaseFailure(error))); 
 };
+

@@ -63,13 +63,14 @@ image{
     background-color: rgb(201, 195, 195);
     margin-top: 60px;
     background-color: #00323b;
+    transform: translateX(-200px);
 }
 .line{
     height:60px;
     width:63.5%;
     display: flex;
     background-color: #1069a0;
-    margin-left: 300px;
+    margin-left: 100px;
     border-radius: 10px;
     margin-top: 40px;
     font-family: 'Times New Roman', Times, serif;
@@ -110,71 +111,46 @@ image{
     border-radius: 10px;
     
 } 
-.nav{
-    height:100px;
-    width:1600px;
-    border:1pc solid rgb(194, 188, 188);
-    margin-left: 10px;
+body{
+    min-height:100vh;
+    font-family: "Poppins", sans-serif;
 }
-.navbar{
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .nav__logo span {
+    color: var(--secondary-color);
+  }
+  
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:1.3rem 10%;
+    background: rgba(0,0,0,.1);
+    backdrop-filter: blur(50px);
     display: flex;
-    border: 1px solid white; 
-    background-image: linear-gradient(to left, #08162a, #00243a, #00323b, #003e2c, #134811);
-    height: 100px;
-    width: 100%;
-    color:white;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+    background-color: #28bf96;
 }
- 
-.home{
-    margin-left: 990px;
-    margin-top: 29px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    font-size: 34px;
-    color:white;
- }
-.Doctor{
-    margin-left: 50px;
-    margin-top: 29px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 34px;
-    color: black;
-    color:white;
- }
- 
-.lab{
-    margin-left: 50px;
-    margin-top: 29px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 34px;
-    color: black;
-    color:white;
- }
- 
-.medicine{
-    margin-left: 50px;
-    margin-top: 29px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 34px;
-    color: black;
-    color:white;
- }
- 
-.signup{
-    margin-left: 50px;
-    margin-top: 29px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 34px;
-    color: black;
-    color:white;
- }
 .logo{
-    margin-left: 80px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-radius: 50px;
-    height:80px;
-    width:200px;
-    margin-top: 10px;
+    font-size:2rem;
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    font-size: 1.15rem;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
 }
 .display{
     display: flex; 
