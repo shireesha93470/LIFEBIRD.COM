@@ -7,7 +7,7 @@ import {
   GET_ALL_DISEASE_FAILURE,
 } from './actiontype';
 
-export const initialState = {
+const initialState = {
   data: [],
   error: '',
   loading: false,
@@ -26,9 +26,9 @@ const authReducer = (state = initialState, action) => {
     case GET_ALL_SIGNUP_SUCCESS:
       return {
         ...state,
-        error: '',
-        data: action.payload, 
         loading: false,
+        error: '',
+        data: action.payload,
       };
     case GET_ALL_SIGNUP_FAILURE:
       return {
@@ -40,14 +40,14 @@ const authReducer = (state = initialState, action) => {
       return {
         ...state,
         loading: true,
-        error: null,
+        error: '',
       };
     case GET_ALL_DISEASE_SUCCESS:
       return {
         ...state,
-        data: action.payload,
         loading: false,
-        error: null,
+        error: '',
+        data: action.payload,
       };
     case GET_ALL_DISEASE_FAILURE:
       return {
@@ -61,4 +61,3 @@ const authReducer = (state = initialState, action) => {
 };
 
 export default authReducer;
-

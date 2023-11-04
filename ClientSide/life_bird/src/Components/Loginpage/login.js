@@ -17,14 +17,14 @@ import './login.css';
 					<div className='subCard2'>
 						<h1>Login Page</h1>
 							<form>
-								<div className="Input">
+								<div className="Input4">
 									<input type="text" placeholder="Username" className="Details" />
 								</div>
-								<div className="Input">
+								<div className="Input4">
 									<input type="password" placeholder="password" className="Details" />
 								</div>
-								<div className="Input center">
-									<input type="button" value="Login" className="Login" />
+								<div className="Input4 center">
+									<input type="button" value="Login" className="login" />
 								</div>
 								<p className="Login-text">Not a member? <a href="" className="White">Signup</a></p>
 							</form>

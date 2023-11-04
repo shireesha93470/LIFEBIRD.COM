@@ -1,4 +1,6 @@
 import axios from 'axios';
+
+
 import {
   GET_ALL_SIGNUP_REQUEST,
   GET_ALL_SIGNUP_SUCCESS,
@@ -6,48 +8,50 @@ import {
   GET_ALL_DISEASE_REQUEST,
   GET_ALL_DISEASE_SUCCESS,
   GET_ALL_DISEASE_FAILURE,
-} from './actiontype.js';
+} from './actiontype';
 
-export const getAllsignupRequest = () => ({
+export const getAllSignupRequest = () => ({
   type: GET_ALL_SIGNUP_REQUEST,
 });
 
-const getAllsignupSuccess = (data) => ({
+export const getAllSignupSuccess = (payload) => ({
   type: GET_ALL_SIGNUP_SUCCESS,
-  data, // Add 'data' as a payload
+  payload, 
 });
 
-const getAllsignupFailure = () => ({
+export const getAllSignupFailure = () => ({
   type: GET_ALL_SIGNUP_FAILURE,
 });
 
 export const signup = () => (dispatch) => {
-  dispatch(getAllsignupRequest());
+  dispatch(getAllSignupRequest());
+  console.log("siri");
   axios
-    .get('http://localhost:8080/details')
-    .then((res) => dispatch(getAllsignupSuccess(res.data)))
-    .catch(() => dispatch(getAllsignupFailure()));
+    .get('http://localhost:8080/api/v1/details')
+    .then((res) => {
+      dispatch(getAllSignupSuccess(res.data))
+    })
+    .catch(() => dispatch(getAllSignupFailure()));
 };
 
-const diseaseRequest = () => ({
+export const getAllDiseaseRequest = () => ({
   type: GET_ALL_DISEASE_REQUEST,
 });
 
-const diseaseSuccess = (data) => ({
+export const getAllDiseaseSuccess = (payload) => ({
   type: GET_ALL_DISEASE_SUCCESS,
-  payload: data, 
+  payload, 
 });
 
-const diseaseFailure = (error) => ({
+export const getAllDiseaseFailure = () => ({
   type: GET_ALL_DISEASE_FAILURE,
-  payload: error,
+  
 });
 
-export const disease = () => (dispatch) => {
-  dispatch(diseaseRequest());
+export const fetchDisease = () => (dispatch) => {
+  dispatch(getAllDiseaseRequest());
   axios
     .get('http://localhost:8080/logos')
-    .then((res) => dispatch(diseaseSuccess(res.data)))
-    .catch((error) => dispatch(diseaseFailure(error))); 
+    .then((res) =>{ dispatch(getAllDiseaseSuccess(res.data))})
+    .catch((error) => dispatch(getAllDiseaseFailure())); // Pass error as an argument
 };
-

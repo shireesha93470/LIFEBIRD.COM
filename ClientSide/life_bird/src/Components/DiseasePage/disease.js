@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { disease } from '../redux/authReducer/action';
+import { fetchDisease } from '../redux/authReducer/action';
 import './disease.css';
 
-const Disease = () => {
+
+function Disease  (){
   const [num, setNum] = useState(1);
   const [search, setSearch] = useState('');
   const dispatch = useDispatch(); 
@@ -12,14 +13,14 @@ const Disease = () => {
   console.log(data);
 
   useEffect(() => {
-    dispatch(disease());
-  }, [dispatch]); 
+    dispatch(fetchDisease());
+  }, []); 
 
   return (
     <div>
       <div className='main-section'>
         <header className="header">
-        <div class="nav__logo">LIFE<span>BIRD</span></div>
+        <div className="nav__logo">LIFE<span>BIRD</span></div>
           <nav className="navbar">
             <a href="">Home</a>
             <a href="">Diseases</a>
@@ -71,7 +72,7 @@ const Disease = () => {
               </div>
             </div>
             {num === 1 && (
-              <div className='card'>
+              <div className='diseasecard'>
                 <img src="https://hospital.narayanahealth.org/northsouth_assets/img/specialities/Cardiac.jpg" alt='Cardiology' />
                 <div className='Text1'>
                   <h1 className='cardio'>Cardiology & Cardiac Surgery</h1>
@@ -87,7 +88,7 @@ const Disease = () => {
               </div>
             )}
             {num === 2 && (
-              <div className='card'>
+              <div className='diseasecard'>
                 <img src="https://hospital.narayanahealth.org/northsouth_assets/img/specialities/Gastro.jpg" alt='Gastroenterology' />
                 <div className='Text1'>
                   <h1 className='cardio'>Gastroenterology</h1>
@@ -101,7 +102,7 @@ const Disease = () => {
               </div>
             )}
             {num === 3 && (
-              <div className='card'>
+              <div className='diseasecard'>
                 <img src="https://hospital.narayanahealth.org/northsouth_assets/img/specialities/turp.jpg" alt='Transplants' />
                 <div className='Text1'>
                   <h1 className='cardio'>Transplants</h1>
@@ -117,7 +118,7 @@ const Disease = () => {
               </div>
             )}
             {num === 4 && (
-              <div className='card'>
+              <div className='diseasecard'>
                 <img src="https://hospital.narayanahealth.org/northsouth_assets/img/specialities/Onco.jpg" alt='Oncology' />
                 <div className='Text1'>
                   <h1 className='cardio'>Oncology</h1>
@@ -132,7 +133,7 @@ const Disease = () => {
               </div>
             )}
             {num === 5 && (
-              <div className='card'>
+              <div className='diseasecard'>
                 <img src="https://hospital.narayanahealth.org/northsouth_assets/img/specialities/Ortho.jpg" alt='Orthopaedics' />
                 <div className='Text1'>
                   <h1 className='cardio'>Orthopaedics</h1>
