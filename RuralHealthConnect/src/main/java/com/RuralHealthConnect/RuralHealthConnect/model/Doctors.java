@@ -16,30 +16,28 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "disease")
-public class Disease {
-    
-    @Id
+@Table(name = "doctor")
+public class Doctors {
+     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    
     private long id;
 
-    @Column(name = "DiseaseImage")
+    @Column(name = "DoctorImage")
     private String image;
 
-    @Column(name = "DiseaseName")
-    private String Name;
+    @Column(name = "DoctorName")
+    private String name;
 
-    public Long getid(Long id){ return id;}
-    public void setid(Long id){this.id=id;}
+    @Column(name = "Doctorspecialization")
+    private String specialization;
 
-    public String getImage(){return image;}
-    public void setImage(String image) {
-        this.image = image;
-    }
+    @Column(name = "DoctorExperience")
+    private String Experience;
 
-    public String getName(){return Name;}
-    public void setName(String Name) {
-        this.Name =Name;
-    }
+    @Column(name="DoctorMobile")
+    private String mobile;
+
+    @Column(name="DoctorLocation")
+    private String location;
+    
 }
