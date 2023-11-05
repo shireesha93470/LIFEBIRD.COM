@@ -1,26 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchDisease } from '../redux/authReducer/action';
+import { fetchDisease } from '../../redux/authReducer/action.js';
 import './disease.css';
 
-
-function Disease  (){
+function Disease() {
   const [num, setNum] = useState(1);
   const [search, setSearch] = useState('');
-  const dispatch = useDispatch(); 
+  const dispatch = useDispatch();
 
-  const data = useSelector((state) => state.dataDetails.data);
-  console.log(data);
+  const disease = useSelector((state) => state.disease.diseaseData);
+  console.log(disease);
 
   useEffect(() => {
     dispatch(fetchDisease());
-  }, []); 
+  }, [dispatch]);
 
   return (
     <div>
       <div className='main-section'>
         <header className="header">
-        <div className="nav__logo">LIFE<span>BIRD</span></div>
+          <div className="nav__logo">LIFE<span>BIRD</span></div>
           <nav className="navbar">
             <a href="">Home</a>
             <a href="">Diseases</a>
@@ -43,9 +42,9 @@ function Disease  (){
           </div>
         </div>
         <div className='display'>
-          <div className='small'>
-            {data?.map(({ Name, image }) => (
-              <div key={Name}>
+        <div className='small'>
+            {disease?.map(({ Name, image ,index}) => (
+              <div key={index}>
                 <div>
                   <img src={image} alt={Name} />
                   <h1>{Name}</h1>
@@ -53,6 +52,7 @@ function Disease  (){
               </div>
             ))}
           </div>
+
           <div className='Main'>
             <div className='line'>
               <div className='cart' onClick={() => setNum(1)}>
@@ -154,4 +154,3 @@ function Disease  (){
 }
 
 export default Disease;
-

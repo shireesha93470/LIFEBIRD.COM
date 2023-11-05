@@ -1,79 +1,95 @@
-import { useState } from 'react';
-import './signup.css';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
+import { Link } from 'react-router-dom';
+import './signup.css';
 
+const Signup = () => {
+  const [patientname, setPatientname] = useState("");
+  const [patientmobile, setPatientmobile] = useState("");
+  const [username, setUsername] = useState("");
+  const [patientemailid, setPatientemailid] = useState("");
+  const [patientpassword, setPatientpassword] = useState("");
 
- const  Signup=()=>{
-	const [patientname,setpatientname]=useState("");
-	const [patientmobile,setpatientmobile]=useState("");
-	const[username,setUsername]=useState("");
-	const [patientemailid,setpatientemailid]=useState("");
-	const [patientpassword,setpatientpassword]=useState("");
-	const navigation=useNavigate();
-	function click(){
-		if(patientname!=""||patientmobile!=""||patientemailid!=""||patientpassword!=""){
-			let signupDetails=JSON.parse(localStorage.getItem("signup"))||[];
-			for(let i=0;i<signupDetails.length;i++)
-			{
-				if(signupDetails[i].username==username||signupDetails[i].patientpassword==patientpassword){
-					alert("user already exist");
-					setpatientname("");
-					setUsername("");
-					setpatientmobile("");
-					setpatientemailid("");
-					setpatientpassword("");
-					return;
-				}
-			}
-			localStorage.setItem("signup",JSON.stringify([...signupDetails,{patientname,username,patientmobile,patientemailid,patientpassword}]));
-			alert("signup successfull")
-			navigation("/home")
-		}
-		else{
-			alert("enter your details")
-		}
-	}
-	return(
-    	 <div>
-             <div className='background'>
-              <div className='main-card'>
- 					<div className='sub-card1'>
- 						<img src="https://i.pinimg.com/originals/fd/93/8f/fd938f85645c5fad55df48a7e30b1161.png"></img>
- 					</div>
- 					<div className='sub-card2'>
- 						<h1>Signup Page</h1>
- 							<form>
- 								<div className="input3">
- 									<input type="text" placeholder="PatientName" onChange={(e) => setpatientname(e.target.value)} value={patientname}className="details"/>
- 								</div>
-								
- 								<div className="input3">
- 									<input type="number" placeholder="patientMobile" onChange={(e)=> setpatientmobile(e.target.value)} vlaue={patientmobile} className="details"/>
- 								</div>
- 								<div className="input3">
- 									<input type="text" placeholder="UserName" onChange={(e)=> setUsername(e.target.value)} value={username} className="details"/>
- 								</div>
- 								<div className="input3">
- 									<input type="text" placeholder="Email-Id" onChange={(e)=> setpatientemailid(e.target.value)} value={patientemailid} className="details"/>
- 								</div>
- 								<div className="input3">
- 									<input type="text" placeholder="Password" onChange={(e)=> setpatientpassword(e.target.value)} value={patientpassword} className="details"/>
- 								</div>
- 								<div className="input3 center">
- 									<button className="login" onClick={click}>signup</button>
- 									<p className="login-text">Alreadyamember? <a href="login.js" className="white"> Login</a></p>
- 								</div>
-								
- 							</form>
- 						</div>
-                 </div>  
-             </div>
-         </div>
- 
+  const navigation = useNavigate();
 
- )
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
+    if (patientname !== "" || patientmobile !== "" || patientemailid !== "" || patientpassword !== "") {
+      const signupDetails = JSON.parse(localStorage.getItem("signup")) || [];
 
-}
+      for (let i = 0; i < signupDetails.length; i++) {
+        if (signupDetails[i].username === username || signupDetails[i].patientpassword === patientpassword) {
+          alert("User already exists");
+          setPatientname("");
+          setUsername("");
+          setPatientmobile("");
+          setPatientemailid("");
+          setPatientpassword("");
+          return;
+        }
+      }
 
- export default Signup;
+      signupDetails.push({ patientname, username, patientmobile, patientemailid, patientpassword });
+      localStorage.setItem("signup", JSON.stringify(signupDetails));
+      alert("Signup successful");
+      navigation("/");
+    } else {
+      alert("Please enter your details");
+    }
+  };
+
+  return (
+    <div className="body">
+      <div className="custom-wrapper">
+        <span className="custom-bg-animate"></span>
+        <div className="custom-form-box signup">
+          <h2>Signup</h2>
+          <form onSubmit={handleSubmit}>
+            <div className="custom-input-box">
+              <input type="text" required value={patientname} onChange={(e) => setPatientname(e.target.value)} />
+              <label>Name</label>
+              <i className="bx bxs-user-circle"></i>
+            </div>
+            <div className="custom-input-box">
+              <input type="text" required value={patientemailid} onChange={(e) => setPatientemailid(e.target.value)} />
+              <label>Email-Id</label>
+              <i className="bx bx-envelope"></i>
+            </div>
+            <div className="custom-input-box">
+              <input type="number" required value={patientmobile} onChange={(e) => setPatientmobile(e.target.value)} />
+              <label>PhoneNumber</label>
+              <i className="bx bx-phone"></i>
+            </div>
+            <div className="custom-input-box">
+              <input type="text" required value={username} onChange={(e) => setUsername(e.target.value)} />
+              <label>Username</label>
+              <i className="bx bxs-user"></i>
+            </div>
+            <div className="custom-input-box">
+              <input type="password" required value={patientpassword} onChange={(e) => setPatientpassword(e.target.value)} />
+              <label>Password</label>
+              <i className="bx bxs-lock-alt"></i>
+            </div>
+            <button type="submit" className="custom-button">
+              Signup
+            </button>
+            <div className="custom-logreg-link">
+              <p>
+                Already have an account?<Link to = "/login"><a href="#" className="custom-register-link">Login</a></Link>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div className="custom-info-text login3">
+          <h2>Welcome Back!</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Signup;

@@ -4,14 +4,15 @@ import Signup from '../Signuppage/signup';
 import Login from '../Loginpage/login';
 import Disease from '../DiseasePage/disease';
 import Doctor from '../DoctorsPage/doctors';
-// import About from '../AboutUsPage/about';
+ import About from '../AboutUsPage/about';
 import Appointment from '../AppointmentPage/appointments'; 
 import { Route, Routes } from 'react-router';
 import NavBar from '../NavBar/navbar';
+import Footer from '../Footer/footer';
 
-const  Routers=()=> {
+function Routers(){
   return (
-    <div className="App">
+    <div>
       <Routes>
         <Route path="/signup" element={<Signup />} />
         <Route path="/" exact element={<Home />} />
@@ -20,7 +21,8 @@ const  Routers=()=> {
         <Route path="/doctors" element={<Doctor />} />
         <Route path="/appointments" element={<Appointment />} />
         <Route path="/navbar" element={<NavBar/>}/>
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/footer" element={<Footer/>}/>
       </Routes>
     </div>
   );
