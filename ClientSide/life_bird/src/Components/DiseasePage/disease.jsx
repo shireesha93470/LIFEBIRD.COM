@@ -1,20 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchDisease } from '../../redux/authReducer/action.js';
+import React, { useState,useEffect } from 'react';
+import { useSelector, useDispatch } from "react-redux"; 
+import { getAllDisease } from '../../redux/authReducer/action'
 import './disease.css';
 
 function Disease() {
   const [num, setNum] = useState(1);
   const [search, setSearch] = useState('');
-  const dispatch = useDispatch();
 
-  const disease = useSelector((state) => state.disease.diseaseData);
-  console.log(disease);
+  const dispatch = useDispatch();
+  const diseaseData = useSelector(state => state.disease.diseaseData);
+  console.log("diseaseData", diseaseData);
 
   useEffect(() => {
-    dispatch(fetchDisease());
-  }, [dispatch]);
+      dispatch(getAllDisease());
+  }, []);
 
+ 
   return (
     <div>
       <div className='main-section'>
@@ -42,17 +43,16 @@ function Disease() {
           </div>
         </div>
         <div className='display'>
-        <div className='small'>
-            {disease?.map(({ Name, image ,index}) => (
+          <div className='small'>
+            {diseaseData.map((disease, index) => (
               <div key={index}>
                 <div>
-                  <img src={image} alt={Name} />
-                  <h1>{Name}</h1>
+                  <img src={disease.disease_image} alt={disease.disease_name} />
+                  <h1>{disease.disease_name}</h1>
                 </div>
               </div>
             ))}
           </div>
-
           <div className='Main'>
             <div className='line'>
               <div className='cart' onClick={() => setNum(1)}>

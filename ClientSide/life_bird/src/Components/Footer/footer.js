@@ -37,19 +37,19 @@ function Footer()
           <div className="footer__col">
             <h4>Contact Us</h4>
             <p>
-              <i className="ri-map-pin-2-fill"></i> 123, London Bridge Street, London
+              <i className="ri-map-pin-2-fill"></i> 315/H , subbanna garden, vijayanagar, Bangalore 560040.
             </p>
             <p>
-              <i className="ri-mail-fill"></i> support@care.com
+              <i className="ri-mail-fill"></i> jtdfoundation.com
             </p>
             <p>
-              <i className="ri-phone-fill"></i> (+012) 3456 789
+              <i className="ri-phone-fill"></i> +91 882378272
             </p>
           </div>
         </div>
         <div className="footer__bar">
           <div className="footer__bar__content">
-            <p>Copyright © 2023 Web Design Mastery. All rights reserved.</p>
+            <p>"Your health is your wealth, and we're here to safeguard it with care and expertise."</p>
             <div className="footer__socials">
               <span>
                 <i className="ri-instagram-line"></i>

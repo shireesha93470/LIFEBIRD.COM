@@ -9,6 +9,7 @@ import Appointment from '../AppointmentPage/appointments';
 import { Route, Routes } from 'react-router';
 import NavBar from '../NavBar/navbar';
 import Footer from '../Footer/footer';
+import ServicesSection from '../Services/services';
 
 function Routers(){
   return (
@@ -23,6 +24,7 @@ function Routers(){
         <Route path="/navbar" element={<NavBar/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/footer" element={<Footer/>}/>
+        <Route path="/services" element={<ServicesSection/>}/>
       </Routes>
     </div>
   );

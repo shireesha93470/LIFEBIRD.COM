@@ -26,6 +26,10 @@ const Home = () => {
     navigate('/about');
   };
 
+  const ServiceNavigation=()=>{
+    navigate('/services');
+  }
+
   return (
     <div>
       <header>
@@ -88,10 +92,10 @@ const Home = () => {
           <div className="service__header__content">
             <h2 className="section__header">Our Special service</h2>
             <p>
-              Beyond simply providing medical care, our commitment lies in delivering unparalleled service tailored to your unique needs.
+            Our dedication extends far beyond just medical treatment; it is centered on delivering exceptional service that is customized to meet your individual requirements.
             </p>
           </div>
-          <button className="service__btn">Ask A Service</button>
+          <button className="service__btn" onClick={ServiceNavigation}>Our Service</button>
         </div>
         <div className="service__grid">
           <div className="service__card">
@@ -100,7 +104,7 @@ const Home = () => {
             </span>
             <h4>Laboratory Test</h4>
             <p>
-              Accurate Diagnostics, Swift Results: Experience top-notch Laboratory Testing at our facility.
+            Experience outstanding laboratory testing at our facility with accurate diagnostics and fast results.
             </p>
             <a href="#">Learn More</a>
           </div>
@@ -110,7 +114,7 @@ const Home = () => {
             </span>
             <h4>Health Check</h4>
             <p>
-              Our thorough assessments and expert evaluations help you stay proactive about your health.
+            Stay ahead of your health with our comprehensive assessments and expert evaluations.
             </p>
             <a href="#">Learn More</a>
           </div>
@@ -120,7 +124,7 @@ const Home = () => {
             </span>
             <h4>General Dentistry</h4>
             <p>
-              Experience comprehensive oral care with Dentistry. Trust us to keep your smile healthy and bright.
+            Trust us to maintain your bright, healthy smile with our comprehensive dental care services.
             </p>
             <a href="#">Learn More</a>
           </div>
@@ -130,13 +134,13 @@ const Home = () => {
         <div className="about__content">
           <h2 className="section__header">About Us</h2>
           <p>
-            Welcome to our LifeBird website, your one-stop destination for reliable and comprehensive health care information. We are committed to promoting wellness and providing valuable resources to empower you on your health journey.
+          Welcome to LifeBird, your all-in-one source for dependable and extensive healthcare resources. Our commitment is to foster well-being and offer valuable information to empower you on your path to better health.
           </p>
           <p>
-            Explore our extensive collection of expertly written articles and guides covering a wide range of health topics. From understanding common medical conditions to tips for maintaining a healthy lifestyle, our content is designed to educate, inspire, and support you in making informed choices for your health.
+          Delve into our vast library of well-crafted articles and guides that span a wide array of health subjects. Our content is thoughtfully designed to inform, motivate, and assist you in making informed decisions about your health, whether it's understanding prevalent medical conditions or embracing a wholesome way of living.
           </p>
           <p>
-            Discover practical health tips and lifestyle advice to optimize your physical and mental well-being. We believe that small changes can lead to significant improvements in your quality of life, and we're here to guide you on your path to a healthier and happier you.
+          Uncover valuable health insights and lifestyle guidance to enhance your physical and mental wellness. We're firm believers that minor adjustments can bring about substantial enhancements in your overall quality of life, and we're here to steer you on your journey towards a healthier, more joyful you.
           </p>
         </div>
         <div className="about__image">
@@ -151,7 +155,7 @@ const Home = () => {
         <div className="why__content">
           <h2 className="section__header">Why Choose Us</h2>
           <p>
-            With a steadfast commitment to your well-being, our team of highly trained healthcare professionals ensures that you receive nothing short of exceptional patient experiences.
+          Our unwavering dedication to your health means our team of extensively skilled healthcare experts guarantees you'll encounter nothing less than outstanding patient care.
           </p>
           <div className="why__grid">
             <span>
@@ -160,7 +164,7 @@ const Home = () => {
             <div>
               <h4>Intensive Care</h4>
               <p>
-                Our Intensive Care Unit is equipped with advanced technology and staffed by a team of professionals.
+              Our state-of-the-art Intensive Care Unit is supported by cutting-edge technology and a dedicated team of experts.
               </p>
             </div>
             <span>
@@ -169,7 +173,7 @@ const Home = () => {
             <div>
               <h4>Free Ambulance Car</h4>
               <p>
-                A compassionate initiative to prioritize your health and well-being without any financial burden.
+              An empathetic effort to put your health and well-being first, without imposing any financial strain.
               </p>
             </div>
             <span>
@@ -178,7 +182,7 @@ const Home = () => {
             <div>
               <h4>Medical and Surgical</h4>
               <p>
-                Our Medical and Surgical services offer advanced healthcare solutions to address medical needs.
+              Our Medical and Surgical services provide innovative healthcare solutions to meet your medical requirements.
               </p>
             </div>
           </div>
@@ -188,18 +192,14 @@ const Home = () => {
       <section className="section__container doctors__container">
         <div className="doctors__header">
           <div className="doctors__header__content">
-            <h2 className="section__header">Our Special Doctors</h2>
-            <p>
-              We take pride in our exceptional team of doctors, each a specialist in their respective fields.
+            <h2 className="section__header temp">Our Special Doctors</h2>
+            <div className='temp2'>
+            <p className='temp1'>
+            We are proud of our outstanding group of physicians, each one a specialist in their specific areas of expertise.
             </p>
+            </div>
           </div>
           <div className="doctors__nav">
-            <span>
-              <i className="ri-arrow-left-line"></i>
-            </span>
-            <span>
-              <i className="ri-arrow-right-line"></i>
-            </span>
           </div>
         </div>
         <div className="doctors__grid">
@@ -276,10 +276,10 @@ const Home = () => {
               LIFE<span>BIRD</span>
             </h3>
             <p>
-              We are honored to be a part of your healthcare journey and committed to delivering compassionate, personalized, and top-notch care every step of the way.
+            We consider it a privilege to accompany you on your healthcare journey, and our commitment remains steadfast in providing caring, tailored, and exceptional care at every phase of your path.
             </p>
             <p>
-              Trust us with your health, and let us work together to achieve the best possible outcomes for you and your loved ones.
+            Have faith in us to care for your well-being, as we collaborate to attain the most favorable results for you and your dear ones.
             </p>
           </div>
           <div className="footer__col">
@@ -301,19 +301,19 @@ const Home = () => {
           <div className="footer__col">
             <h4>Contact Us</h4>
             <p>
-              <i className="ri-map-pin-2-fill"></i> 123, London Bridge Street, London
+              <i className="ri-map-pin-2-fill"></i> 315/H , subbanna garden, vijayanagar, Bangalore 560040.
             </p>
             <p>
-              <i className="ri-mail-fill"></i> support@care.com
+              <i className="ri-mail-fill"></i>jtdfoundation.com
             </p>
             <p>
-              <i className="ri-phone-fill"></i> (+012) 3456 789
+              <i className="ri-phone-fill"></i> +91 882378272
             </p>
           </div>
         </div>
         <div className="footer__bar">
           <div className="footer__bar__content">
-            <p>Copyright © 2023 Web Design Mastery. All rights reserved.</p>
+            <p>"Your health is your wealth, and we're here to safeguard it with care and expertise."</p>
             <div className="footer__socials">
               <span>
                 <i className="ri-instagram-line"></i>
