@@ -3,6 +3,7 @@ package com.restapi.springboot.mysql.rest.api.controllers;
 import com.restapi.springboot.mysql.rest.api.model.Doctor;
 import com.restapi.springboot.mysql.rest.api.service.DoctorService;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,11 +23,12 @@ public class DoctorController {
         return doctorService.getDoctorById(id);
     }
 
-    @RequestMapping(method = RequestMethod.POST, value="/create")
-    @CrossOrigin( origins = "http://localhost:3306")
-    public Doctor saveDoctor(@RequestBody Doctor doctor){
-        return doctorService.create(doctor);
+    @PostMapping("/create")
+    @CrossOrigin(origins = "http://localhost:3306")
+    public Doctor saveDoctor(@RequestBody Doctor doctor) {
+       return doctorService.create(doctor);
     }
+    
 
     @PutMapping("/update")
     public Doctor updateDisease(@RequestBody Doctor doctor) {

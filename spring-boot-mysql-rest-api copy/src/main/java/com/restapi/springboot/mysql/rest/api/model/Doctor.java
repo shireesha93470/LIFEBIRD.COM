@@ -1,3 +1,87 @@
+// package com.restapi.springboot.mysql.rest.api.model;
+
+// import javax.persistence.Column;
+// import javax.persistence.Entity;
+// import javax.persistence.GeneratedValue;
+// import javax.persistence.GenerationType;
+// import javax.persistence.Id;
+// import javax.persistence.Table;
+
+// @Entity
+// @Table(name="Doctorsdata")
+// public class Doctor {
+
+//     @Id
+//     @GeneratedValue(strategy = GenerationType.AUTO)
+//     private int id;
+
+//     @Column
+//     private String image;
+
+//     @Column
+//     private String name;
+
+//     @Column
+//     private String specialization;
+
+//     @Column
+//     private String experience;
+
+//     @Column
+//     private int phone_number;
+
+   
+
+//     public int getId() {
+//         return id;
+//     }
+
+//     public void setId(int id) {
+//         this.id = id;
+//     }
+
+//     public String getimage() {
+//         return image;
+//     }
+
+//     public void setimage(String image) {
+//         this.image = image;
+//     }
+
+//     public String getname() {
+//         return name;
+//     }
+
+//     public void setname(String name) {
+//         this.name = name;
+//     }
+
+//     public String getspecialization() {
+//         return specialization;
+//     }
+
+//     public void setspecialization(String specialization) {
+//         this.specialization = specialization;
+//     }
+
+//     public String getexperience() {
+//         return experience;
+//     }
+
+//     public void setexperience(String experience) {
+//         this.experience = experience;
+//     }
+
+//     public int getPhone_number() {
+//         return phone_number;
+//     }
+
+//     public void setPhone_mobile(String phone_number) {
+//         this.phone_number = phone_number;
+//     }
+
+   
+// }
 package com.restapi.springboot.mysql.rest.api.model;
 
 import javax.persistence.Column;
@@ -5,8 +89,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="doctorsdata")
 public class Doctor {
 
     @Id
@@ -14,22 +100,21 @@ public class Doctor {
     private int id;
 
     @Column
-    private String doctor_image;
+    private String image;
 
     @Column
-    private String doctor_name;
+    private String name;
 
     @Column
-    private String doctor_specialisation;
+    private String specialization;
 
     @Column
-    private String doctor_experience;
+    private String experience;
 
     @Column
-    private String doctor_mobile;
+    private String phonenumber;
 
-    @Column
-    private String doctor_location;
+    // Getter and setter methods for other properties...
 
     public int getId() {
         return id;
@@ -39,51 +124,43 @@ public class Doctor {
         this.id = id;
     }
 
-    public String getDoctor_image() {
-        return doctor_image;
+    public String getImage() {
+        return image;
     }
 
-    public void setDoctor_image(String doctor_image) {
-        this.doctor_image = doctor_image;
+    public void setImage(String image) {
+        this.image = image;
     }
 
-    public String getDoctor_name() {
-        return doctor_name;
+    public String getName() {
+        return name;
     }
 
-    public void setDoctor_name(String doctor_name) {
-        this.doctor_name = doctor_name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getDoctor_specialisation() {
-        return doctor_specialisation;
+    public String getSpecialization() {
+        return specialization;
     }
 
-    public void setDoctor_specialisation(String doctor_specialisation) {
-        this.doctor_specialisation = doctor_specialisation;
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
     }
 
-    public String getDoctor_experience() {
-        return doctor_experience;
+    public String getExperience() {
+        return experience;
     }
 
-    public void setDoctor_experience(String doctor_experience) {
-        this.doctor_experience = doctor_experience;
+    public void setExperience(String experience) {
+        this.experience = experience;
     }
 
-    public String getDoctor_mobile() {
-        return doctor_mobile;
+    public String getphonenumber() {
+        return phonenumber;
     }
 
-    public void setDoctor_mobile(String doctor_mobile) {
-        this.doctor_mobile = doctor_mobile;
-    }
-
-    public String getDoctor_location() {
-        return doctor_location;
-    }
-
-    public void setDoctor_location(String doctor_location) {
-        this.doctor_location = doctor_location;
+    public void setPhone_number(String phonenumber) {
+        this.phonenumber = phonenumber;
     }
 }

@@ -14,7 +14,7 @@ public class DiseaseServiceImpl implements DiseaseService {
     DiseaseRepository diseaseRepository;
 
     @Override
-    public Disease create(Disease disease){
+    public Disease create(Disease disease) {
         return diseaseRepository.save(disease);
     }
 
@@ -25,17 +25,17 @@ public class DiseaseServiceImpl implements DiseaseService {
 
     @Override
     public Disease getDiseaseById(Integer id) {
-        return diseaseRepository.findById(id).get();
+        return diseaseRepository.findById(id).orElse(null);
     }
 
     @Override
-    public  Disease update(Disease disease) {
+    public Disease update(Disease disease) {
         return diseaseRepository.save(disease);
     }
 
     @Override
     public String deleteDisease(Integer id) {
         diseaseRepository.deleteById(id);
-        return "user is deleted successfully from the database";
+        return "User is deleted successfully from the database";
     }
 }

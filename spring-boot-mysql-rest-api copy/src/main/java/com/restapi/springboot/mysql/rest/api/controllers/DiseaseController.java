@@ -3,17 +3,19 @@ package com.restapi.springboot.mysql.rest.api.controllers;
 import com.restapi.springboot.mysql.rest.api.model.Disease;
 import com.restapi.springboot.mysql.rest.api.service.DiseaseService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/diseases")
+@RequestMapping("/disease")
 public class DiseaseController {
     @Autowired
     DiseaseService diseaseService;
-    @GetMapping("")
-    public List<Disease> index() {
+    @GetMapping
+    public List<Disease> getAllDiseases() {
         return diseaseService.getAllDiseases();
     }
 
@@ -22,11 +24,13 @@ public class DiseaseController {
         return diseaseService.getDiseaseById(id);
     }
 
-    @RequestMapping(method = RequestMethod.POST, value="/create")
-    @CrossOrigin( origins = "http://localhost:3306")
-    public Disease saveDisease(@RequestBody Disease disease){
-        return diseaseService.create(disease);
-    }
+   @PostMapping("/create")
+    @CrossOrigin(origins = "http://localhost:3306/") 
+    public ResponseEntity<Disease> saveDisease(@RequestBody Disease disease) {
+    Disease createdDisease = diseaseService.create(disease);
+    return new ResponseEntity<>(createdDisease, HttpStatus.CREATED);
+}
+
 
     @PutMapping("/update")
     public  Disease updateDisease(@RequestBody Disease disease) {
@@ -38,3 +42,4 @@ public class DiseaseController {
         return diseaseService.deleteDisease(id);
     }
 }
+

@@ -8,17 +8,17 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Diseaselogos")
+@Table(name="Diseasedata")
 public class Disease {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     @Column
-    private String disease_image;
+    private String image;
 
     @Column
-    private  String disease_name;
+    private  String name;
 
     public long getId() {
         return id;
@@ -28,19 +28,19 @@ public class Disease {
         this.id = id;
     }
 
-    public String getDisease_image() {
-        return disease_image;
+    public String getimage() {
+        return image;
     }
 
-    public void setDisease_image(String disease_image) {
-        this.disease_image = disease_image;
+    public void setimage(String image) {
+        this.image = image;
     }
 
-    public String getDisease_name() {
-        return disease_name;
+    public String getname() {
+        return name;
     }
 
-    public void setDisease_name(String disease_name) {
-        this.disease_name = disease_name;
+    public void setname(String name) {
+        this.name = name;
     }
 }
