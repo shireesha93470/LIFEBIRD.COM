@@ -11,6 +11,7 @@ import NavBar from '../NavBar/navbar';
 import Footer from '../Footer/footer';
 import ServicesSection from '../Services/services';
 
+import View from '../ViewPage/view';
 function Routers(){
   return (
     <div>
@@ -25,6 +26,8 @@ function Routers(){
         <Route path="/about" element={<About />} />
         <Route path="/footer" element={<Footer/>}/>
         <Route path="/services" element={<ServicesSection/>}/>
+        <Route path="/view/:id" element={<View />} />
+
       </Routes>
     </div>
   );

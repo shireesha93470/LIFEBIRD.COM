@@ -72,7 +72,7 @@ const Home = () => {
             <p>
               Welcome, where your extraordinary patient journey is our top concern. We're committed to your health with compassion, advanced facilities, and a patient-centric ethos. Put your trust in us for your well-being, and feel the distinction.
             </p>
-            <button className="btn2">See Services</button>
+            <button  onClick={ServiceNavigation} className="btn2">See Services</button>
           </div>
           <div className="header__form">
             <form>
@@ -205,7 +205,7 @@ const Home = () => {
         <div className="doctors__grid">
           <div className="doctors__card">
             <div className="doctors__card__image">
-              <img src="https://cdn.yashodahospitals.com/wp-content/uploads/Dr.-Vennela-Devarapalli.jpg" alt="doctor" />
+              <img src="https://specialisthospital.in/wp-content/uploads/2023/05/NewDoctorsWebsite-Anitha.jpg" alt="doctor" />
               <div className="doctors__socials">
                 <span>
                   <i className="ri-instagram-line"></i>
