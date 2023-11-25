@@ -13,7 +13,10 @@ body{
     font-size: 1.5rem;
     font-weight: 600;
     color: #ffffff;
-  }
+}
+.nav__logo:hover{
+    cursor: pointer;
+}
 .header{
     position:fixed;
     top:0;

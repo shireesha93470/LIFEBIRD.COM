@@ -18,9 +18,6 @@ const Home = () => {
     navigate('/doctors');
   };
 
-  const appointmentNavigation = () => {
-    navigate('/appointments');
-  };
 
   const aboutNavigation = () => {
     navigate('/about');
@@ -51,11 +48,7 @@ const Home = () => {
                 Doctors
               </a>
             </li>
-            <li className="link">
-              <a href="" onClick={appointmentNavigation}>
-                Appointments
-              </a>
-            </li>
+          
             <li className="link">
               <a href="" onClick={aboutNavigation}>
                 About us
@@ -106,7 +99,7 @@ const Home = () => {
             <p>
             Experience outstanding laboratory testing at our facility with accurate diagnostics and fast results.
             </p>
-            <a href="#">Learn More</a>
+            
           </div>
           <div className="service__card">
             <span>
@@ -116,7 +109,6 @@ const Home = () => {
             <p>
             Stay ahead of your health with our comprehensive assessments and expert evaluations.
             </p>
-            <a href="#">Learn More</a>
           </div>
           <div className="service__card">
             <span>
@@ -126,7 +118,6 @@ const Home = () => {
             <p>
             Trust us to maintain your bright, healthy smile with our comprehensive dental care services.
             </p>
-            <a href="#">Learn More</a>
           </div>
         </div>
       </section>

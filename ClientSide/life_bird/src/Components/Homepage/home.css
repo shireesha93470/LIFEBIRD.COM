@@ -77,6 +77,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+ position:sticky;
 }
 
 .nav__logo {
@@ -149,6 +150,7 @@ header {
   color: #005587;
   background-color: var(--primary-color-light);
   border-radius: 5px;
+  padding-left: 10px;
 }
 
 .header__form input::placeholder {

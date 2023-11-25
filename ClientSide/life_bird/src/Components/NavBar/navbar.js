@@ -7,7 +7,7 @@ function NavBar (){
   const navigate = useNavigate();
 
   const handleNavigation = () => {
-    navigate('/signup');
+    navigate('/');
   };
 
   const diseaseNavigation = () => {
@@ -18,9 +18,7 @@ function NavBar (){
     navigate('/doctors');
   };
 
-  const appointmentNavigation = () => {
-    navigate('/appointments');
-  };
+  
 
   const aboutNavigation = () => {
     navigate('/about');
@@ -29,13 +27,13 @@ function NavBar (){
 
   return (
     <header className="header">
-     <div className="nav__logo">Life<span>Bird</span></div>
+     <div onClick={handleNavigation} className="nav__logo">Life<span>Bird</span></div>
       <nav className="navbar">
         <a onClick={handleNavigation} href="">Home</a>
         <a onClick={diseaseNavigation} href="">Diseases</a>
         <a onClick={doctorsNavigation} href="">Doctors</a>
-        <a onClick={appointmentNavigation} href="">Appointments</a>
         <a onClick={aboutNavigation} href="">About Us</a>
+        
       </nav>
     </header>
   );

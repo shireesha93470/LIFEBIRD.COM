@@ -1,0 +1,32 @@
+.Symptoms{
+   height:600px;
+   width:90%;
+   border:25px solid #005587;
+   margin-top: 15px;
+   border-top-right-radius: 120px;
+   border-bottom-left-radius: 120px;
+   margin-left: 80px;
+   text-align: start;
+}
+.sbtn{
+    height:50px;
+    width:200px;
+    background-color: black;
+    color:white;
+    /* margin-top: 150px; */
+    margin-left: 150px;
+    border-radius: 10px;
+}
+.buttondiv{
+    height:70px;
+    width:70%;
+    /* border:1px solid blue; */
+    margin-top: 150px;
+    margin-left: 250px;
+}
+.sbtn:hover{
+    cursor: pointer;
+}
+.Symptoms p{
+    font-size: 25px;
+}

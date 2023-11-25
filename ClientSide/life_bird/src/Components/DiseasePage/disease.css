@@ -169,7 +169,7 @@ body{
     width:100%;
     display: flex;
     flex-wrap: wrap;
-    height:1900px;
+    height:1400px;
     /* background-color:rgb(198, 196, 196); */
     margin-top: 77px;
     padding-top: 100px;
@@ -195,9 +195,10 @@ body{
     height:500px;
     width:400px;
     border: 2px solid #005587;
-    margin-left: 150px;
+    margin-left: 155px;
     border-radius: 10px;
-    background-color:#767268;
+    background-color:#89a4b2;
+   
    
 }
 .diseaseimg p{
