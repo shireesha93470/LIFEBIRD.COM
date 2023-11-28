@@ -1,0 +1,216 @@
+.Name{
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: open;
+    margin-left: 600px;
+}
+#parttwo{
+    width:90%;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.phone{
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.exp{
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.address{
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+image{
+    height:400px;
+    width:400px;
+    border:1px solid black;
+   
+}
+.diseasecard{
+    height:500px;
+    width:1290px;
+    margin-left: 300px;
+    background-color: white;
+    margin-top: 30px;
+    display: flex;
+}
+.diseasecard img{
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    width:530px;    
+
+}
+.cardio{
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.siri{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 60px;
+}
+.Main{
+    height:700px;
+    width:100%;
+    background-color: rgb(201, 195, 195);
+    margin-top: 60px;
+    background-color: #00323b;
+    transform: translateX(-200px);
+}
+.line{
+    height:60px;
+    width:63.5%;
+    display: flex;
+    background-color: #1069a0;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.prime{
+    height:500px;
+    width:400px;
+   
+    
+}
+.cart{
+    height:60px;
+    width:260px;
+    background-color:#1069a0;
+    border-radius: 10px;
+   
+
+}
+.cart p{
+    margin-left: 10px;
+}
+.line p{
+    margin-left: 40px;
+    font-size: 25px;
+    color:white;
+}
+.cart:hover{
+    background-color: white;
+}
+
+.cart:hover p {
+    color: black;
+} 
+.img{
+    height:300px;
+    width:300px;
+    border:1px solid black;
+    border-radius: 10px;
+    
+} 
+body{
+    min-height:100vh;
+    font-family: "Poppins", sans-serif;
+}
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .nav__logo span {
+    color: var(--secondary-color);
+  }
+  
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:1.3rem 10%;
+    background: rgba(0,0,0,.1);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+    background-color: #28bf96;
+}
+.logo{
+    font-size:2rem;
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    font-size: 1.15rem;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+.display{
+    display: flex; 
+    background-color: rgb(132, 132, 132);
+    margin-top: 5px;
+
+}
+.partone img{
+    height:750px;
+    width:100%;
+    background-size: cover;
+    margin-left: 5px;
+    
+}
+.small{ 
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.doctor{
+    width: 400px;
+}
+
+.img{
+    margin-left: 70px;
+}
+.text1{
+    margin-left: 100px;
+}
+.clickbutton{
+    height:60px;
+    width:250px;
+    margin-left: 80px;
+    background-color: rgb(155, 232, 155);
+    border-radius: 10px;
+    font-size: 20px;
+}
+.search-input img{
+    height:40px;
+    width:40px;
+    
+}
+ .search-button{
+    height:55px;
+    width: 60px;
+    border:1px solid black; 
+    margin-left: 10px;
+    margin-top: -30px;
+    background-color: white;
+}
+ .search-input{
+    display: flex;
+}
+ .search-input input{
+    height:50px;
+    width:500px;
+    margin-top: -30px;
+    font-size: 20px;
+    margin-left: 650px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
