@@ -28,9 +28,7 @@
 - [x] getting data from backend
 - [x] serching will happen in backend
 
-<h2>My website will look like</h2>
 
-![Screenshot from 2023-07-02 14-27-07](https://github.com/shireesha93470/capstone_project-LifeBird/assets/112804232/0a664595-af55-4118-b386-b5167c8782c2)
 
 
 ### Life_Bird
