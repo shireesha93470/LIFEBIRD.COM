@@ -1,0 +1,27 @@
+.viewimg{
+    height:500px;
+    width:600px;
+    border:1px solid black;
+    margin-top: 120px;
+    margin-left: 550px;
+    border-radius: 10px;
+    background-color: #89a4b2;
+}
+.viewimg img{
+    height: 300px;
+    width:300px;
+    margin-left: 140px;
+    margin-top: 30px;
+    border: 5px solid #005584;
+    border-radius: 5px;
+}
+b{
+    color: #005584;
+    font-size: 20px;
+    
+}
+.viewdata{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
