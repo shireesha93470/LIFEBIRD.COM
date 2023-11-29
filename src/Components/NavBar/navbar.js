@@ -18,7 +18,9 @@ function NavBar (){
     navigate('/doctors');
   };
 
-  
+  // const otp=()=>{
+  //   navigate('/otp');
+  // }
 
   const aboutNavigation = () => {
     navigate('/about');
@@ -33,6 +35,8 @@ function NavBar (){
         <a onClick={diseaseNavigation} href="">Diseases</a>
         <a onClick={doctorsNavigation} href="">Doctors</a>
         <a onClick={aboutNavigation} href="">About Us</a>
+        {/* <a onClick={otp} href="">OTP</a> */}
+        
         
       </nav>
     </header>

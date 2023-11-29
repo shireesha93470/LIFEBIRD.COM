@@ -57,18 +57,20 @@ image{
     margin-left: 60px;
     margin-bottom: 60px;
     width:530px;    
+    width:100%;
 
 }
 .cardio{
     margin-top: 60px;
     margin-left: 30px;
 }
-.siri{
+.text2{
     margin-top: 10px;
     margin-left: 30px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     margin-right: 60px;
+   text-align: justify;
 }
 .Main{
     height:700px;
@@ -185,23 +187,20 @@ body{
     margin-left: 100px;
 }
 .diseaseimg img{
-    height:300px;
-    width:300px;
-    margin-left: 48px;
-    margin-top: 45px;
-    border-radius: 10px;
+    height:350px;
+    width:100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .diseaseimg{
     height:500px;
     width:400px;
-    border: 2px solid #005587;
     margin-left: 70px;
     border-radius: 10px;
-    background-color:#89a4b2;
+    background-color: #005587;
     margin-top: 70px;
-   
-    
-   
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
 }
 .diseaseimg p{
     font-size: 30px;

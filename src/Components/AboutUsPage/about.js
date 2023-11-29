@@ -32,6 +32,7 @@ function About() {
               these online healthcare services. This growth projection underscores the growing prominence of telemedicine in the digital healthcare
               landscape, with the data-driven study offering insights into market trends, opportunities, and hurdles. 
             </p>
+            <button className='aboutbtn'>Readmore</button>
           </div>
         </div>
         <div className="about_right">
@@ -54,6 +55,7 @@ function About() {
               in times of crisis like the COVID-19 pandemic. They empower individuals to take charge of their health, save time and resources, reduce the burden
               on healthcare infrastructure, and ensure continuity of care. However, they also raise issues related to privacy, security, and equitable access,
               necessitating careful consideration and regulation as they continue to gain prominence in the digital landscape.  </p>
+              <button className='aboutbtn'>Readmore</button>
           </div>
         </div>
       </div>
