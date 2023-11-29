@@ -1,0 +1,25 @@
+.section{
+    height:500px;
+    width:600px;
+    border:1px solid blue;
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.formmain{
+    display: flex;
+}
+.lbn{
+    text-align: start;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.htn{
+    height:40px;
+    width:300px;
+    border: 1px solid red;
+    margin-left:200px;
+    transform: translateY(-33px);
+}
