@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css");
 :root {
-  /* --primary-color: #12ac8e; */
   --primary-color:#005587;
-  /* --primary-color-dark: #0d846c; */
   --primary-color-dark:0
   --primary-color-light: #e9f7f7;
   --secondary-color: #fb923c;

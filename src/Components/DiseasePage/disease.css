@@ -225,7 +225,7 @@ body{
 }
 .footer {
     background-color: var(--primary-color-light);
-    /* transform: translateY(-100px); */
+    
   }
   
   .footer__container {

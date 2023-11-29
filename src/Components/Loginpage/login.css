@@ -100,7 +100,6 @@
 	top: -100%;
 	left: 0;
 	z-index: -1;
-	/* background: linear-gradient(#081b29, #0ef, #081b29, #0ef); */
 	transition: 0.5s;
  }
  .new-button:hover::before {

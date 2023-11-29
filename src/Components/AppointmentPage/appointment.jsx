@@ -18,7 +18,6 @@ const AppointmentForm = () => {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    // Load stored data when the component mounts
     const storedData = JSON.parse(localStorage.getItem('appointmentFormData'));
     if (storedData) {
       setStoredData(storedData);
@@ -35,24 +34,14 @@ const AppointmentForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Add your form submission logic here
-
-    // Store form data in localStorage
     localStorage.setItem('appointmentFormData', JSON.stringify(formData));
 
-    // Update the stored data state
     setStoredData(formData);
-
-    // Show the pop-up
     setShowPopup(true);
   };
 
   const handleDelete = () => {
-    // Delete stored data from localStorage
     localStorage.removeItem('appointmentFormData');
-
-    // Clear the stored data state
     setStoredData(null);
   };
 
@@ -64,7 +53,7 @@ const AppointmentForm = () => {
     <div>
       <h1>Appointment</h1>
       <form onSubmit={handleSubmit}>
-        {/* Your basic details section */}
+        {/* basic details section */}
         <div className='formmain'>
           <div className="section">
             <div className="section-title">Your basic details</div>
