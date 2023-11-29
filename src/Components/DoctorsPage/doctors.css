@@ -1,4 +1,4 @@
-.doctorimg img{
+.doctor_img img{
     height:300px;
     width:300px;
     margin-left: 50PX;
@@ -48,7 +48,7 @@
     font-size: 16px;
     color: #80a3bd;
   }
-  .doctorimg{
+  .doctor_img{
     height:632px;
     width:400px;
     /* border:1px solid black; */
@@ -58,7 +58,7 @@
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     
   }
-  .doctordetail{
+  .doctor_detail{
     height: 38.5%;
     width:100%;
     background-color: #005587;
@@ -69,7 +69,7 @@
     border-bottom-right-radius: 10px;
    
   }
-  .doctbtn{
+  .doct_btn{
     display: flex;
     margin-top: 30px;
   }
@@ -89,7 +89,7 @@
   .clicking{
     cursor: pointer;
   }
-.doctdata{
+.doct_data{
   font-size: 20px;
   text-align: start;
   margin-left: 50px;

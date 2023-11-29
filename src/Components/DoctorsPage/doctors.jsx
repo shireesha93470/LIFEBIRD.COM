@@ -14,14 +14,14 @@ const DoctorCard = ({ doctor, onViewDetails }) => {
   }
   
   return (
-    <div key={doctor.id} className="doctorimg">
+    <div key={doctor.id} className="doctor_img">
       <img src={doctor.image} alt={doctor.name} />
-      <div className="doctordetail">
-        <p className="doctdata">Name: {doctor.name}</p>
-        <p className="doctdata">PhoneNumber: {doctor.phonenumber}</p>
-        <p className="doctdata">Experience: {doctor.experience}</p>
-        <p className="doctdata">Specialization: {doctor.specialization}</p>
-        <div className="doctbtn">
+      <div className="doctor_detail">
+        <p className="doct_data">Name: {doctor.name}</p>
+        <p className="doct_data">PhoneNumber: {doctor.phonenumber}</p>
+        <p className="doct_data">Experience: {doctor.experience}</p>
+        <p className="doct_data">Specialization: {doctor.specialization}</p>
+        <div className="doct_btn">
           <button onClick={onViewDetails} className="clicking">
             View more
           </button>

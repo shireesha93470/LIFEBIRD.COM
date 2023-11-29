@@ -30,14 +30,14 @@ function Disease() {
   return (
     <div>
       <div className="">
-        <div className="main-section">
+        <div className="main_section">
           <NavBar />
         </div>
     
       <div className="small">
         {Records.map((disease, index) => (
           <div key={index}>
-            <div className="diseaseimg">
+            <div className="disease_img">
               <img src={disease.image} alt={disease.name} />
               <p>{disease.name}</p>
               <button onClick={() => symptomNavigation(disease.id)} className="clickbtn">
@@ -67,11 +67,11 @@ function Disease() {
           </div>
         </div>
         {num === 1 && (
-          <div className='diseasecard'>
+          <div className='disease_card'>
             <img src="https://hospital.narayanahealth.org/northsouth_assets/img/specialities/Cardiac.jpg" alt='Cardiology' />
             <div className='Text1'>
-              <h1 className='cardio'>Cardiology & Cardiac Surgery</h1>
-              <p className='siri'>At Siri Health, we have a team of highly qualified and experienced
+              <h1 className='text2'>Cardiology & Cardiac Surgery</h1>
+              <p className='diseasetext'>At Siri Health, we have a team of highly qualified and experienced
                 cardiologists, interventional cardiologists, and cardiac surgeons who provide comprehensive
                 care for a wide range of cardiac conditions in adults & children.
                 Treatment for Cardiac conditions offered at Narayana Health ranges from medication, treatment
@@ -83,11 +83,11 @@ function Disease() {
           </div>
         )}
         {num === 2 && (
-          <div className='diseasecard'>
+          <div className='disease_card'>
             <img src="https://hospital.narayanahealth.org/northsouth_assets/img/specialities/Gastro.jpg" alt='Gastroenterology' />
             <div className='Text1'>
-              <h1 className='cardio'>Gastroenterology</h1>
-              <p className='siri'>The Department of Gastroenterology at Siri Health is at the forefront of the diagnosis and treatment of
+              <h1 className='text2'>Gastroenterology</h1>
+              <p className='diseasetext'>The Department of Gastroenterology at Siri Health is at the forefront of the diagnosis and treatment of
                 gastrointestinal diseases, which consists of a highly trained gastroenterologist team. We treat diseases
                 concerning the upper digestive tract, stomach, liver, colon, intestinal problems, and pancreas. At Narayana
                 Health, we follow a multidisciplinary approach for the care of patients, and the department is supported by
@@ -97,11 +97,11 @@ function Disease() {
           </div>
         )}
         {num === 3 && (
-          <div className='diseasecard'>
+          <div className='disease_card'>
             <img src="https://hospital.narayanahealth.org/northsouth_assets/img/specialities/turp.jpg" alt='Transplants' />
             <div className='Text1'>
-              <h1 className='cardio'>Transplants</h1>
-              <p className='siri'>Siri Health offers one of the most comprehensive organ transplantation programs in India. The experience and
+              <h1 className='text2'>Transplants</h1>
+              <p className='diseasetext'>Siri Health offers one of the most comprehensive organ transplantation programs in India. The experience and
                 expertise of our consultants along with an integrated multidisciplinary team approach and excellent infrastructure try to ensure superior outcomes.
                 Our hospitals are well known for several multi-organ transplant procedures such as:
                 Heart Transplant - Adult | Paediatric
@@ -113,11 +113,11 @@ function Disease() {
           </div>
         )}
         {num === 4 && (
-          <div className='diseasecard'>
+          <div className='disease_card'>
             <img src="https://hospital.narayanahealth.org/northsouth_assets/img/specialities/Onco.jpg" alt='Oncology' />
             <div className='Text1'>
-              <h1 className='cardio'>Oncology</h1>
-              <p className='siri'>Our Department of Oncology follows a trans-disciplinary and multi-modality
+              <h1 className='text2'>Oncology</h1>
+              <p className='diseasetext'>Our Department of Oncology follows a trans-disciplinary and multi-modality
                 approach in the field of adult and paediatric Oncology. The department has an extensive medical
                 programme, with super-sub-specialists in the field of Medical Oncology, Haematology – Adult &
                 Paediatric, Radiation Oncology, Specialised Onco surgery. There are various specialized clinics
@@ -128,11 +128,11 @@ function Disease() {
           </div>
         )}
         {num === 5 && (
-          <div className='diseasecard'>
+          <div className='disease_card'>
             <img src="https://hospital.narayanahealth.org/northsouth_assets/img/specialities/Ortho.jpg" alt='Orthopaedics' />
             <div className='Text1'>
-              <h1 className='cardio'>Orthopaedics</h1>
-              <p className='siri'>Our Department of Orthopaedics provides comprehensive and world-class orthopaedics services.
+              <h1 className='text2'>Orthopaedics</h1>
+              <p className='diseasetext'>Our Department of Orthopaedics provides comprehensive and world-class orthopaedics services.
                 The expert team of consultants offer specialized care in the fields of complex trauma, poly-trauma, and other
                 sub-specialties of orthopaedics. It provides management for all disorders of bone, joint, and a variety of musculoskeletal disorders.
                 The department has extensive experience in diagnosing and treating upper & lower limb surgery, trauma, bone diseases, and congenital
@@ -141,7 +141,7 @@ function Disease() {
             </div>
           </div>
         )}
-        
+
       </div>
       <Footer />
     </div>

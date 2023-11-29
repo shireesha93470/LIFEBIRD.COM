@@ -16,12 +16,6 @@
     font-family: open;
     margin-left: 600px;
 }
-#parttwo{
-    width:90%;
-    margin-left: 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 .phone{
     font-size: 25px;
     margin-left: 30px;
@@ -43,7 +37,7 @@ image{
     border:1px solid black;
    
 }
-.diseasecard{
+.disease_card{
     height:500px;
     width:1290px;
     margin-left: 450px;
@@ -52,14 +46,14 @@ image{
     display: flex;
     border-radius: 5px;
 }
-.diseasecard img{
+.disease_card img{
     margin-top: 60px;
     margin-left: 60px;
     margin-bottom: 60px;
     width:530px;    
 
 }
-.cardio{
+.text2{
     margin-top: 60px;
     margin-left: 30px;
 }
@@ -184,14 +178,14 @@ body{
 .text1{
     margin-left: 100px;
 }
-.diseaseimg img{
+.disease_img img{
     height:300px;
     width:300px;
     margin-left: 48px;
     margin-top: 45px;
     border-radius: 10px;
 }
-.diseaseimg{
+.disease_img{
     height:500px;
     width:400px;
     border: 2px solid #005587;
@@ -203,7 +197,7 @@ body{
     
    
 }
-.diseaseimg p{
+.disease_img p{
     font-size: 30px;
    text-align: center;
    margin-top: 20px;
