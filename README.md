@@ -1,45 +1,70 @@
+# Getting Started with Create React App
 
-<h1>LIFEBIRD.COM</h1>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Technologies Involved
+## Available Scripts
 
-- HTML
-- CSS
-- JavaScript
-- React
-- Redux
+In the project directory, you can run:
 
-<div>
-  <img style="width:80px"src="https://cdn3d.iconscout.com/3d/free/thumb/free-html-5728485-4781249.png?f=webp" alt="error"/>
-  <img style="width:50px"src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="error"/>
-  <img style="width:60px"src="https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png" alt="error"/>
-  <img style="width:60px"src="https://ionicframework.com/docs/icons/logo-react-icon.png" alt="error"/>
-  <img style="width:80px"src="https://logodix.com/logo/1614302.png" alt="error"/>
-</div>
+### `npm start`
 
-### Functionalities Shown
-- [x] Login/Signup with your personal Details or Google or Facebook Auth.
-- [x] Select Your Nearby location
-- [x] Filter By specialization
-- [x] Search By Doctors
-- [x] routing
-- [x] redux
-- [x] Creating API
-- [x] getting data from backend
-- [x] serching will happen in backend
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Life_Bird
-<h1>About Project</h1>
-<h3>Why</h3>
-<p> The primary purpose of this website is to improve healthcare access and outcomes for people living in rural areas. In many rural regions, people face challenges in accessing quality medical care due to limited healthcare facilities and long distances to specialist doctors. This website aims to bridge this healthcare gap by providing a platform where individuals can easily connect with specialist doctors through virtual consultations. By doing so, it empowers rural communities to stay healthy, receive expert medical advice, and manage their health effectively.
-</p>
-<h3>What</h3>
-<p>The website is an online platform that allows individuals in rural areas to access healthcare services remotely. It enables patients to schedule virtual consultations with specialist doctors from various medical fields. The website acts as a facilitator, connecting patients and doctors through secure video calls or telemedicine technology. During these consultations, patients can discuss their health concerns, receive medical advice, get diagnoses, and receive treatment recommendations. Additionally, the website may also offer features for storing and accessing medical records, allowing for continuity of care.</p>
-<h3>How</h3>
-<p>This website facilitates improved health in rural areas by providing easy access to specialist doctors. Patients can conveniently connect with doctors through virtual consultations, eliminating the need for long travels to distant medical facilities. Users can register, create profiles, and search for specialists based on their medical needs. Scheduling appointments is simple and flexible, offering convenience to rural patients.</p>
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
