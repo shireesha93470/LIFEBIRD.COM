@@ -1,0 +1,47 @@
+.Symptoms{
+   width:80%;
+   border:10px solid #0ab5f4;
+   margin-top: 15px;
+   margin-left: 180px;
+   text-align: justify;
+   background-color:#faf9fb;
+  
+}
+ .sbtn {
+    align-items: center;
+    background-image: linear-gradient(144deg,#100652, #100652 50%,#026065);
+    border: 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 190px;
+
+  }
+  
+  .sbtn:active,
+  .sbtn:hover {
+    outline: 0;
+  }  
+  .buttondiv{
+    height:70px;
+    width:70%;
+    margin-top: 150px;
+    margin-left: 250px;
+}
+.sbtn:hover{
+    cursor: pointer;
+}
+.Symptoms p{
+    font-size: 25px;
+}
+*{
+    font-family: "Poppins", sans-serif;
+}
